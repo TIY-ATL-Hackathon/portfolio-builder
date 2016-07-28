@@ -23,16 +23,20 @@ function config ($stateProvider, $urlRouterProvider){
             templateUrl: 'templates/register.temp.html',
             controller: 'RegisterController as vm'
         })
+        .state('root.profile-info', {
+            url: '/edit-profile-info'
+            templateUrl: 'templates/profile-info.temp.html'
+        })
         .state('root.profile', {
             url: '/profile',
             templateUrl: 'templates/profile.temp.html'
         })
         .state('root.resume', {
-            url: '/profile/:id/resume',
+            url: '/:username/resume',
             templateUrl: 'templates/resume.temp.html'
         })
         .state('root.edit', {
-            url: '/profile/:id/resume/edit',
+            url: '/:username/resume/edit',
             templateUrl: 'templates/edit.temp.html'
         })
         .state('root.error', {
