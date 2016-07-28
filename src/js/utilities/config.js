@@ -16,7 +16,9 @@ function config ($stateProvider, $urlRouterProvider){
         })
         .state('root.register', {
             url: '/register',
-            templateUrl: 'templates/register.temp.html'
+            templateUrl: 'templates/register.temp.html',
+            controller: 'RegisterController as vm'
+
         })
         .state('root.profile', {
             url: '/profile/:id',
