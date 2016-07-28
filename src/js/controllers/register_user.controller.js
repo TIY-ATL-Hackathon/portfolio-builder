@@ -1,9 +1,22 @@
-function registerUser(){
-    vm  = this;
+function registerUser(requests, $state, $cookies){
+    let vm  = this;
+
+    vm.submit = submit;
+
+    function submit(user){
+
+        requests.register(user).then((res)=>{
+        console.log(res);
+        $cookies.put('access_token', res.data.access_token)
+        $state.go('root.login');
+        });
+
+    }
 
 
 
 
 }
 
+registerUser.$inject = ['requests', '$state', '$cookies']
 export {registerUser}
