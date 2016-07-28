@@ -1,0 +1,42 @@
+* {
+	font-family: 'Heebo', sans-serif;
+}
+
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: #060315;
+}
+
+.body {
+	background-color: #131313;
+	height: 720px;
+}
+
+.footer {
+	line-height: 50px;
+	font-size: 12px;
+	background-color: #131313;
+	color: #00A0F0;
+	text-align: center;
+}
+
+.logo img {
+	height: 75px;
+	margin-left: 75px;
+	margin-top: 15px;
+}
+
+.nav-bar {
+	display: inline-block;
+	float: right;
+	margin-top: 40px;
+	margin-right: 50px;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	color: #00A0F0;
+	margin: 20px;
+	font-weight: 300;
+}
