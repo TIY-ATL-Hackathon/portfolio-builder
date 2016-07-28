@@ -10,6 +10,10 @@ function config ($stateProvider, $urlRouterProvider){
         	templateUrl: 'templates/home.temp.html',
         	controller: 'HomeController as vm'
         })
+        .state('root.portfolios', {
+            url: '/portfolios',
+            templateUrl: 'templates/portfolios.temp.html'
+        })
         .state('root.login', {
             url: '/login',
             templateUrl: 'templates/login.temp.html',
@@ -19,18 +23,21 @@ function config ($stateProvider, $urlRouterProvider){
             url: '/register',
             templateUrl: 'templates/register.temp.html',
             controller: 'RegisterController as vm'
-
+        })
+        .state('root.profile-info', {
+            url: '/edit-profile-info',
+            templateUrl: 'templates/profile-info.temp.html'
         })
         .state('root.profile', {
-            url: '/profile/:id',
+            url: '/profile',
             templateUrl: 'templates/profile.temp.html'
         })
         .state('root.resume', {
-            url: '/profile/:id/resume',
+            url: '/:username/resume',
             templateUrl: 'templates/resume.temp.html'
         })
         .state('root.edit', {
-            url: '/profile/:id/resume/edit',
+            url: '/:username/resume/edit',
             templateUrl: 'templates/edit.temp.html'
         })
         .state('root.error', {

@@ -6,7 +6,11 @@ import {config} from './utilities/config.js';
 import {server} from './utilities/tim.server.js';
 import {registerUser} from './controllers/register_user.controller.js';
 import {requests} from './services/requests.service.js'
+
 import {Login} from './controllers/login.controller.js';
+
+import "./utilities/nav.js";
+
 
 angular 
     .module('app',['ui.router','ngCookies'])
