@@ -3,12 +3,18 @@ import 'angular-ui-router';
 import {HomeController} from './controllers/home.controller.js'
 import {config} from './utilities/config.js';
 import {server} from './utilities/github.server.js';
+import {registerUser} from './controllers/register_user.controller.js';
+import {requests} from './services/requests.service.js'
 
 angular 
     .module('app',['ui.router'])
-    .controller('HomeController', HomeController)
     .config(config)
     .constant('GITSERVER', server)
+    .controller('HomeController', HomeController)
+    .controller('RegisterController',registerUser)    
+    .service('requests', requests)
+    
+
 ;
 
 
