@@ -8,6 +8,7 @@
 	height: 100px;
 	width: 100%;
 	background-color: #060315;
+	position: fixed;
 }
 
 .body {
@@ -42,3 +43,42 @@
 	margin: 20px;
 	font-weight: 300;
 }
+
+.c2 {
+	padding-top: 100px;
+}
+
+/*HOME PAGE*/
+
+/*LOG IN PAGE*/
+.login {
+	padding-top: 50px;
+}
+
+.login input {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	display: block;
+}
+
+.login-button {
+	display: block;
+	height: 40px;
+	width: 75px;
+	margin: auto;
+	margin-top: 15px;
+	background-color: #00C4FA;
+	border: 0;
+	border-radius: 4px;
+}
+
+.register-link {
+	color: #9CB0B0;
+	text-align: center;
+	display: block;
+	padding-top: 20px;
+	font-size: 12px;
+}
+
+/*REGISTER PAGE*/
