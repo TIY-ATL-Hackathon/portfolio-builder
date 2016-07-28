@@ -5,6 +5,7 @@ import {config} from './utilities/config.js';
 import {server} from './utilities/github.server.js';
 import {registerUser} from './controllers/register_user.controller.js';
 import {requests} from './services/requests.service.js'
+import "./utilities/nav.js";
 
 angular 
     .module('app',['ui.router'])
