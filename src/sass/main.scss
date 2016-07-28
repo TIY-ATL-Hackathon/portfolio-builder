@@ -4,30 +4,51 @@
 	color: #fff;
 }
 
+body {
+	background-color: #060315;
+}
+
 .header {
 	height: 100px;
 	width: 100%;
-	background-color: #060315;
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	transition: height .2s;
+}
+
+.sticky {
+	height: 75px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+	transition: height .5s;
 	position: fixed;
 }
 
 .body {
-	background-color: #131313;
+	background-color: #060315;
 	height: 720px;
 }
 
 .footer {
 	line-height: 50px;
 	font-size: 12px;
-	background-color: #131313;
-	color: #00A0F0;
+	background-color: #060315;
+	color: #9CB0B0;
 	text-align: center;
+}
+.logo {
+	transition: all .5s;
+	position: absolute;
+	left: 0;
+}
+.logo.centered {
+	position: absolute;
+	left: 40%;
 }
 
 .logo img {
 	height: 75px;
 	margin-left: 75px;
-	margin-top: 15px;
 }
 
 .nav-bar {
@@ -44,15 +65,11 @@
 	font-weight: 300;
 }
 
-.c2 {
-	padding-top: 100px;
-}
-
 /*HOME PAGE*/
 
 /*LOG IN PAGE*/
 .login {
-	padding-top: 50px;
+	padding-top: 150px;
 }
 
 .login input {
@@ -82,3 +99,34 @@
 }
 
 /*REGISTER PAGE*/
+
+/*PROFILE PAGE*/
+.user-info {
+	padding-top: 100px;
+	padding-left: 50px;
+	img {
+		height: 230px;
+		width: 230px;
+		border-radius: 3px;
+	}
+	span {
+		display: block;
+	}
+}
+
+.name {
+	font-size: 30px;
+}
+
+.username {
+	width: 230px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #fff;
+	color: #9CB0B0;
+}
+
+.bio {
+	width: 230px;
+	padding-top: 10px;
+	font-size: 13px;
+}
