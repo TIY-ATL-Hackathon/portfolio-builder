@@ -12,27 +12,27 @@ function config ($stateProvider, $urlRouterProvider){
         })
         .state('root.login', {
             url: '/login',
-            templateUrl: 'login.temp.html'
+            templateUrl: 'templates/login.temp.html'
         })
         .state('root.register', {
             url: '/register',
-            templateUrl: 'register.temp.html'
+            templateUrl: 'templates/register.temp.html'
         })
         .state('root.profile', {
             url: '/profile/:id',
-            templateUrl: 'profile.temp.html'
+            templateUrl: 'templates/profile.temp.html'
         })
         .state('root.resume', {
             url: '/profile/:id/resume',
-            templateUrl: 'resume.temp.html'
+            templateUrl: 'templates/resume.temp.html'
         })
         .state('root.edit', {
             url: '/profile/:id/resume/edit',
-            templateUrl: 'edit.temp.html'
+            templateUrl: 'templates/edit.temp.html'
         })
         .state('root.error', {
             url: '/404',
-            templateUrl: 'error.temp.html'
+            templateUrl: 'templates/error.temp.html'
         })
 
         $urlRouterProvider.otherwise('/404');
