@@ -4,8 +4,9 @@
 	</a>
 	<div class="nav-bar">
 		<a href="/#/portfolios">View Porfolios</a>
-		<a href="/#/login">Login</a>
+		<a href="/#/login" ng-hide="vm.loggedIn === 'true'" >Login</a>
 		<a href="/#/{{vm.username}}">Profile</a>
+		<a href="/#/{{vm.username}}" ng-show="vm.loggedIn === 'true'" ng-click="vm.logout()" >Logout</a>
 	</div>
 </div>
 <div class="body">
