@@ -230,6 +230,17 @@ body {
 
 /*RESUME*/
 
+.back-arrow {
+	float: left;
+	font-size: 30px;
+}
+
+.edit {
+	float: left;
+	font-size: 13px;
+	margin-left: 200px;
+}
+
 .resume-1 {
 	width: 700px;
 	margin: auto;
@@ -238,9 +249,12 @@ body {
 }
 
 .res1-header {
-	min-height: 150px;
 	width: 100%;
 	background-color: #20BCA4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .res1-header img {
@@ -248,43 +262,143 @@ body {
 	width: 50px;
 	margin-top: 75px;
 	margin-left: 50px;
-	float: left;
 }
 
 .res1-name {
 	font-size: 35px;
 	color: #fff;
 	font-weight: 500;
-	float: left;
 	width: 500px;
 	text-align: center;
 	line-height: 50px;
 	margin-top: 20px;
 	text-transform: uppercase;
+	input {
+		width: 300px;
+	}
 }
 
 .res1-certifications {
-	float: left;
 	width: 500px;
 	font-size: 12px;
 	text-transform: uppercase;
 	text-align: center;
 	span {
 		display: inline;
-	}
+	};
+	input {
+		width: 100px;
+	};
 }
 
 .res1-bio {
-	float: left;
 	width: 350px;
-	margin-left: 85px;
 	line-height: 10px;
+	margin-bottom: 15px;
 	span {
 		font-size: 10px;
 		color: rgba(0,0,0, 0.6);
 	}
+	textarea {
+		min-width: 350px;
+		max-width: 350px;
+	}
 }
 
 .res1-body {
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	min-height: 520px;
+}
+
+.res1-title {
+	color: #20BCA4;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.res1-block {
+	width: 250px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.res1-item {
+	display: flex;
+}
+
+.res1-date-div {
+	margin-right: 12.5px;
+}
+
+.res1-item-date {
+	color: #20BCA4;
+	width: 50px;
+	text-align: right;
+	font-size: 11px;
+	font-weight: 100;
+}
+
+.date-input {
+	width: 25px;
+}
+
+.title-input {
+	margin-left: 10px;
+}
+
+.res1-item-title {
+	color: #20BCA4;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.res1-item-desc {
 	color: black;
+	font-weight: 100;
+	font-size: 10px;
+}
+
+.res1-languages {
+	text-align: center;
+}
+
+.res1-lang {
+	display: inline;
+	color: #20BCA4;
+	font-size: 15px;
+	font-weight: 500;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.res1-contact-info {
+	display: block;
+	color: #20BCA4;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+
+.res1-footer {
+	height: 20px;
+	width: 100%;
+	background-color: #20BCA4;
+}
+
+/*404 PAGE*/
+.notfound {
+	margin-top: 50px;
+	text-align: center;
+	img {
+		height: 75px;
+	}
+}
+
+.cat img{
+	width: 100%;
 }
