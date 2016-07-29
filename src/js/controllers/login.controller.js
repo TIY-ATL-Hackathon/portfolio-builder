@@ -12,6 +12,7 @@ function Login($state, requests, $cookies){
 
 			}
 			if (res.status === 200){
+				$cookies.put('loggedIn', true);
 				$state.go('root.profile',{username: $cookies.get('username')});	
 			}
 			console.log(res);
