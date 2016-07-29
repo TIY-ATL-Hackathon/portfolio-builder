@@ -1,3 +1,7 @@
+$cyan: #20BCA4;
+$maroon: #7F0002;
+$purple: #BF00FE;
+
 * {
 	font-family: 'Heebo', sans-serif;
 	font-weight: 300;
@@ -13,20 +17,21 @@ body {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
-	transition: height .2s;
+	transition: all .2s;
+	z-index: 2;
 }
 
 .sticky {
 	height: 75px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.85);
-	transition: height .5s;
+	transition: all .5s;
 	position: fixed;
 }
 
 .body {
 	background-color: #060315;
-	height: 1000px;
+	min-height: 650px;
 }
 
 .footer {
@@ -35,12 +40,15 @@ body {
 	background-color: #060315;
 	color: #9CB0B0;
 	text-align: center;
+	clear: both;
 }
+
 .logo {
 	transition: all .5s;
 	position: absolute;
 	left: 0;
 }
+
 .logo.centered {
 	position: absolute;
 	left: 40%;
@@ -66,6 +74,54 @@ body {
 }
 
 /*HOME PAGE*/
+
+.home-page {
+	min-height: 700px;
+}
+
+.hero img {
+	width: 100%;
+	z-index: 0;
+}
+
+.headline {
+	position: relative;
+}
+
+.headline span {
+	position: absolute;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 400;
+	letter-spacing: 2px;
+	top: -300px;
+	left: 35%;
+	z-index: 1;
+}
+
+.main-text {
+	span {
+		display: block;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		padding-top: 20px;
+	}
+}
+
+.layout-options {
+	padding-top: 30px;
+	a {
+		text-decoration: none;
+	};
+	img{
+		width: 33%;
+	};
+}
+
+.select {
+	color: #00A0F0;
+}
 
 /*LOG IN PAGE*/
 .login {
@@ -250,7 +306,7 @@ body {
 
 .res1-header {
 	width: 100%;
-	background-color: #20BCA4;
+	background-color: $cyan;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -313,7 +369,7 @@ body {
 }
 
 .res1-title {
-	color: #20BCA4;
+	color: $cyan;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 400;
@@ -334,7 +390,7 @@ body {
 }
 
 .res1-item-date {
-	color: #20BCA4;
+	color: $cyan;
 	width: 50px;
 	text-align: right;
 	font-size: 11px;
@@ -350,7 +406,7 @@ body {
 }
 
 .res1-item-title {
-	color: #20BCA4;
+	color: $cyan;
 	font-size: 11px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -368,7 +424,7 @@ body {
 
 .res1-lang {
 	display: inline;
-	color: #20BCA4;
+	color: $cyan;
 	font-size: 15px;
 	font-weight: 500;
 	margin-left: 30px;
@@ -377,7 +433,7 @@ body {
 
 .res1-contact-info {
 	display: block;
-	color: #20BCA4;
+	color: $cyan;
 	font-size: 12px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -387,7 +443,7 @@ body {
 .res1-footer {
 	height: 20px;
 	width: 100%;
-	background-color: #20BCA4;
+	background-color: $cyan;
 }
 
 /*404 PAGE*/
