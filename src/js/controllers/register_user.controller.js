@@ -8,7 +8,7 @@ function registerUser(requests, $state, $cookies){
         requests.register(user).then((res)=>{
         console.log(res);
         $cookies.put('access_token', res.data.access_token);
-        $cookies.put('username', res.data.first_name);
+        $cookies.put('username', res.data.username);
         $state.go('root.profile-info');
         });
 

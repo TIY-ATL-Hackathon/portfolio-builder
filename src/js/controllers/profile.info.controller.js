@@ -10,15 +10,15 @@ function profileInfo ($state, requests, $cookies) {
 	};
   
 
-	vm.testget = function (){
-		console.log('hi')
-		            $state.go('root.profile',{username: $cookies.get('username')});
+	// vm.testget = function (){
+	// 	console.log('hi')
+	
 		            
-		// requests.get_userGithub('lisasmith').then((res)=>{
-		// 	console.log(res)
-		// });
-	}
-	vm.testget();
+	// 	// requests.get_userGithub('lisasmith').then((res)=>{
+	// 	// 	console.log(res)
+	// 	// });
+	// }
+	// vm.testget();
 
 }
 
