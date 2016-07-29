@@ -26,7 +26,8 @@ function config ($stateProvider, $urlRouterProvider){
         })
         .state('root.profile-info', {
             url: '/edit-profile-info',
-            templateUrl: 'templates/profile-info.temp.html'
+            templateUrl: 'templates/profile-info.temp.html',
+            controller: 'ProfileFormController as vm'
         })
         .state('root.profile', {
             url: '/profile',

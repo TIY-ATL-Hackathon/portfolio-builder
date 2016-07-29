@@ -1,0 +1,14 @@
+<div class="templatepadding">
+	<form class="registerUserform" name="newUser" ng-submit='vm.submit(profile)'>
+		<label>GitHub Username</label>
+		<input type="text" name="uname" ng-model='profile.github_username' required>
+		<label>Location</label>
+		<input type="text" name="lname" ng-model='profile.location' required>
+		<label>Bio</label>
+		<input type="text" name="bio" ng-model='profile.bio' required>
+		<label>Layout Choice</label>
+		<input type="number" name="layout" ng-model='profile.layout_choice' required>
+        <button> Submit</button>
+	</form>
+
+</div>
