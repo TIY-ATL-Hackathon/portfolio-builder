@@ -9,7 +9,7 @@ function registerUser(requests, $state, $cookies){
         console.log(res);
         $cookies.put('access_token', res.data.access_token);
         $cookies.put('username', res.data.first_name);
-        $state.go('root.login');
+        $state.go('root.profile-info');
         });
 
     }

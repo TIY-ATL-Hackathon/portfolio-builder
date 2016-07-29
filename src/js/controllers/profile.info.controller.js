@@ -12,7 +12,7 @@ function profileInfo ($state, requests, $cookies) {
 
 	vm.testget = function (){
 		console.log('hi')
-		            // $state.go('root.profile',{username: $cookies.get('username')});
+		            $state.go('root.profile',{username: $cookies.get('username')});
 		            
 		// requests.get_userGithub('lisasmith').then((res)=>{
 		// 	console.log(res)

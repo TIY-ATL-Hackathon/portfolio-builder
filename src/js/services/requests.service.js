@@ -6,6 +6,9 @@ function requests ($http, SERVER, $cookies) {
 	this.putProfile = putProfile;
 	this.get_userPro = get_userPro;
 	this.get_userGithub = get_userGithub;
+
+	this.githubComb = githubComb;
+
 	function register(newUser){
 		return $http.post(SERVER.URL + 'signup', newUser);
 	}
@@ -51,7 +54,42 @@ function requests ($http, SERVER, $cookies) {
 		return $http.get(SERVER.URL + `github/${username}`);
 	}
 
+	function githubComb(obj){
+
+		let git_obj = {};
+		git_obj.repos =[];
+        git_obj.img = obj.user_obj.avatar_url;
+        git_obj.github_link = obj.user_obj.html_url;
+        git_obj.username = obj.user_obj.name;
+        git_obj.blog = obj.user_obj.blog;
+        git_obj.location = obj.user_obj.location;
+        git_obj.email = obj.user_obj.email;
+        git_obj.bio = obj.user_obj.bio;
+
+        obj.repos.forEach((repo)=>{
+        	let repo_obj = {};
+        	repo_obj.repo_link = repo.html_url;
+        	repo_obj.repo_desc = repo.description;
+        	repo_obj.repo_name = repo.name;
+        	repo_obj.repo_lang = repo.language;
+        	git_obj.repos.push(repo_obj);
+        })
+
+		return git_obj;
+	}
+
+
+
+
 }
 
+
+
+
+
+
+
+
 requests.$inject = ['$http', 'SERVER','$cookies'];
+
 export {requests};
