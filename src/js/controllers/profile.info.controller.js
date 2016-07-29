@@ -4,19 +4,21 @@ function profileInfo ($state, requests, $cookies) {
 		requests.submitPro(proinfo).then((res)=>{
         	console.log(res)   
         	$cookies.put('layout_choice', res.data.layout_choice);
-            $state.go('root.profile');
+            $state.go('root.profile',{username: $cookies.get('username')});
 		});
 		console.log('hi');
 	};
   
 
-	// vm.testget = function (){
-	// 	console.log('hi')
-	// 	requests.get_userGithub('lisasmith').then((res)=>{
-	// 		console.log(res)
-	// 	});
-	// }
-	// vm.testget();
+	vm.testget = function (){
+		console.log('hi')
+		            // $state.go('root.profile',{username: $cookies.get('username')});
+		            
+		// requests.get_userGithub('lisasmith').then((res)=>{
+		// 	console.log(res)
+		// });
+	}
+	vm.testget();
 
 }
 
