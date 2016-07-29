@@ -34,7 +34,6 @@ function config ($stateProvider, $urlRouterProvider){
 			url: '/:username',
 			templateUrl: 'templates/profile.temp.html',
 			controller: 'ProfileController as vm'
-
 		})
 		.state('error', {
 			url: '/notfound/404',
