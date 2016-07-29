@@ -179,6 +179,14 @@ body {
 
 /*PROFILE PAGE*/
 
+.github-button {
+	color: #9CB0B0;
+	text-align: center;
+	display: block;
+	padding-top: 20px;
+	font-size: 12px;
+}
+
 .user-info {
 	padding-top: 100px;
 	margin-left: 150px;
@@ -485,6 +493,45 @@ body {
 	height: 20px;
 	width: 100%;
 	background-color: $cyan;
+}
+
+/*PORTFOLIO PAGE*/
+
+.port-padding {
+	padding-top: 100px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.port-profile {
+	display: inline-block;
+	width: 250px;
+	background-color: black;
+}
+
+.port-profile img {
+	height: 250px;
+	width: 250px;
+}
+
+.port-card {
+	padding: 10px;
+	padding-top: 0;
+}
+
+.port-name {
+	font-size: 15px;
+	font-weight: 400;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 5px;
+}
+
+.port-desc {
+	font-size: 12px;
+	height: 75px;
+	width: 250px;
+	overflow: hidden;
 }
 
 /*404 PAGE*/
