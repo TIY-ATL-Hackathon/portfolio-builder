@@ -1,17 +1,21 @@
 
 <div class="c2">
-	<form class="registerUserform" name="newUser" ng-submit='vm.submit(user)'>
-		<label>First Name</label>
-		<input type="text" name="fname" ng-model='user.first_name' required>
-		<label>Last Name</label>
-		<input type="text" name="lname" ng-model='user.last_name' required>
-		<label>User Name</label>
-		<input type="text" name="username" ng-model='user.username' required>
-		<label>Email</label>
-		<input type="text" name="email" ng-model='user.email' required>
-		<label>Password</label>
-		<input type="password" name="password" ng-model='user.password' required>
-        <button> Register</button>
+	<form class="register-user-form" name="newUser" ng-submit='vm.submit(user)'>
+		<div class="reg-first-name">
+			<input type="text" name="fname" placeholder="First Name" ng-model='user.first_name' required>
+		</div>
+		<div class="reg-last-name">
+			<input type="text" name="lname" placeholder="Last Name" ng-model='user.last_name' required>
+		</div>
+		<div class="reg-user-name">
+			<input type="text" name="username" placeholder="Username" ng-model='user.username' required>
+		</div>
+		<div class="reg-email">
+			<input type="text" name="email" placeholder="Email" ng-model='user.email' required>
+		</div>
+		<div class="reg-password">
+			<input type="password" name="password" placeholder="Password" ng-model='user.password' required>
+		</div>
+        <button class="login-button">Register</button>
 	</form>
-
 </div>

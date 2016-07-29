@@ -30,14 +30,16 @@ function config ($stateProvider, $urlRouterProvider){
             controller: 'ProfileFormController as vm'
         })
         .state('root.profile', {
-            url: '/profile',
+
+            url: '/:username',
             templateUrl: 'templates/profile.temp.html',
             controller: 'ProfileController as vm'
+
         })
-        .state('root.resume', {
-            url: '/:username/resume',
-            templateUrl: 'templates/resume.temp.html'
-        })
+        // .state('root.resume', {
+        //     url: '/:username/resume',
+        //     templateUrl: 'templates/resume.temp.html'
+        // })
         .state('root.edit', {
             url: '/:username/resume/edit',
             templateUrl: 'templates/edit.temp.html'
@@ -45,6 +47,14 @@ function config ($stateProvider, $urlRouterProvider){
         .state('root.error', {
             url: '/404',
             templateUrl: 'templates/error.temp.html'
+        })
+        // .state('root2', {
+        //     abstract: true,
+        //     templateUrl: 'template/resume-layout.temp.html'
+        // })
+        .state('resume', {
+            url: '/:username/resume',
+            templateUrl: 'templates/resume.temp.html'
         })
 
         $urlRouterProvider.otherwise('/404');
