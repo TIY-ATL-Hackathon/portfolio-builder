@@ -35,8 +35,8 @@ function config ($stateProvider, $urlRouterProvider){
 			controller: 'ProfileController as vm'
 
 		})
-		.state('root.error', {
-			url: '/404',
+		.state('error', {
+			url: '/notfound/404',
 			templateUrl: 'templates/error.temp.html'
 		})
 		.state('resume', {
@@ -48,7 +48,7 @@ function config ($stateProvider, $urlRouterProvider){
 			templateUrl: 'templates/edit.temp.html'
 		})
 
-		$urlRouterProvider.otherwise('/404');
+		$urlRouterProvider.otherwise('/notfound/404');
 }
 
 config.$inject = ['$stateProvider', '$urlRouterProvider'];
