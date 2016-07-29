@@ -1,4 +1,4 @@
-function HomeController ($http, GITSERVER){
+function HomeController ($http, SERVER){
 
 	let vm = this;
     vm.cow = function(){
@@ -9,6 +9,6 @@ function HomeController ($http, GITSERVER){
 
 }
 
-HomeController.$inject = ['$http','GITSERVER']
+HomeController.$inject = ['$http','SERVER']
 
 export {HomeController};
