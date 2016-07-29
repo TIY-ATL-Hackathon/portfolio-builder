@@ -30,8 +30,11 @@ function config ($stateProvider, $urlRouterProvider){
             controller: 'ProfileFormController as vm'
         })
         .state('root.profile', {
+
             url: '/:username',
-            templateUrl: 'templates/profile.temp.html'
+            templateUrl: 'templates/profile.temp.html',
+            controller: 'ProfileController as vm'
+
         })
         // .state('root.resume', {
         //     url: '/:username/resume',

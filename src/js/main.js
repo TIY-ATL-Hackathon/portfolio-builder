@@ -9,6 +9,7 @@ import {server} from './utilities/tim.server.js';
 import {HomeController} from './controllers/home.controller.js';
 import {Login} from './controllers/login.controller.js';
 import {profileInfo} from './controllers/profile.info.controller.js';
+import {ProfileController} from './controllers/profile.controller.js';
 import {registerUser} from './controllers/register_user.controller.js';
 import {requests} from './services/requests.service.js'
 
@@ -25,6 +26,7 @@ angular
     .controller('RegisterController',registerUser)    
     .controller('LoginController', Login)  
     .controller('ProfileFormController', profileInfo)
+    .controller('ProfileController', ProfileController)
     .service('requests', requests)
     
 

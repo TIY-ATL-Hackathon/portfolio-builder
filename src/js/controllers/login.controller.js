@@ -6,8 +6,8 @@ function Login($state, requests, $cookies){
 	vm.gd();
 	vm.login = function(user){
 		requests.login(user).then((res)=>{
-			if ($cookies.get('first_name') == undefined){
-				$cookies.put('first_name', res.data.username);
+			if ($cookies.get('username') == undefined){
+				$cookies.put('username', res.data.username);
 				$cookies.put('access_token', res.data.access_token);
 
 			}

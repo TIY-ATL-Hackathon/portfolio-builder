@@ -3,18 +3,23 @@ function profileInfo ($state, requests, $cookies) {
 	vm.submit = function(proinfo){
 		requests.submitPro(proinfo).then((res)=>{
         	console.log(res)   
-        	$cookies.put('github', res.data.username);
-
+        	$cookies.put('layout_choice', res.data.layout_choice);
+            $state.go('root.profile',{username: $cookies.get('username')});
 		});
 		console.log('hi');
 	};
   
 
-	// vm.testget = function (){
-	// 	console.log('hi')
-	// 	requests.test();
-	// }
-	// vm.testget();
+	vm.testget = function (){
+		console.log('hi')
+		            // $state.go('root.profile',{username: $cookies.get('username')});
+		            
+		// requests.get_userGithub('lisasmith').then((res)=>{
+		// 	console.log(res)
+		// });
+	}
+	vm.testget();
+
 }
 
 profileInfo.$inject = ['$state', 'requests','$cookies' ];
