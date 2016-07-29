@@ -1,4 +1,4 @@
-function profileInfo ($state, requests, $http, SERVER) {
+function profileInfo ($state, requests, $cookies) {
 	let vm = this
 	vm.submit = function(proinfo){
 		requests.submitPro(proinfo).then((res)=>{
@@ -17,5 +17,5 @@ function profileInfo ($state, requests, $http, SERVER) {
 	// vm.testget();
 }
 
-profileInfo.$inject = ['$state', 'requests','$http', 'SERVER'];
+profileInfo.$inject = ['$state', 'requests','$cookies' ];
 export {profileInfo};
