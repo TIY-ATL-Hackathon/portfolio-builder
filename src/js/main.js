@@ -8,6 +8,7 @@ import {server} from './utilities/tim.server.js';
 
 import {HomeController} from './controllers/home.controller.js';
 import {Login} from './controllers/login.controller.js';
+import {LayoutController} from './controllers/layout.controller.js'
 import {profileInfo} from './controllers/profile.info.controller.js';
 import {ProfileController} from './controllers/profile.controller.js';
 import {registerUser} from './controllers/register_user.controller.js';
@@ -22,6 +23,7 @@ angular
     .module('app',['ui.router','ngCookies'])
     .config(config)
     .constant('SERVER', server)
+    .controller('LayoutController', LayoutController)  
     .controller('HomeController', HomeController)
     .controller('RegisterController',registerUser)    
     .controller('LoginController', Login)  
