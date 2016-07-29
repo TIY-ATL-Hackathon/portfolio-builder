@@ -76,6 +76,7 @@ body {
 	margin: auto;
 	margin-top: 10px;
 	margin-bottom: 10px; 
+	padding: 4px;
 	display: block;
 	color: black;
 	&:focus{
@@ -102,20 +103,26 @@ body {
 	font-size: 12px;
 }
 
-
-.registerUserform{
-	input{
-			color: black;
-    }
-    button{
-			color: black;
-    }
-}
-
-
 /*REGISTER PAGE*/
 
+.register-user-form {
+	text-align: center;
+	padding-top: 120px;
+	input {
+		margin: auto;
+		padding: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 500px;
+		color: black;
+		&:focus{
+			outline: 0;
+		};
+	}
+}
+
 /*PROFILE PAGE*/
+
 .user-info {
 	padding-top: 100px;
 	margin-left: 150px;
@@ -152,11 +159,13 @@ body {
 .location {
 	padding-top: 10px;
 	margin-left: 20px;
+	height: 25px;
 }
 
 .email {
 	padding-top: 10px;
 	margin-left: 20px;
+	height: 25px;
 }
 
 .hireable {
@@ -199,9 +208,83 @@ body {
 	border-bottom: 1px solid #fff;
 }
 
-// Profile-edit css
+.resume-link {
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	margin-left: 50px;
+	margin-top: 25px;
+	height: 50px;
+	width: 600px;
+	background-color: #00C4FA;
+	border: 0;
+	border-radius: 4px;
+	float: left;
+}
+
+/*Profile-edit css*/
 
 .templatepadding{
 	padding-top:100px;
 }
 
+/*RESUME*/
+
+.resume-1 {
+	width: 700px;
+	margin: auto;
+	background-color: #fff;
+	color: black;
+}
+
+.res1-header {
+	min-height: 150px;
+	width: 100%;
+	background-color: #20BCA4;
+}
+
+.res1-header img {
+	height: 50px;
+	width: 50px;
+	margin-top: 75px;
+	margin-left: 50px;
+	float: left;
+}
+
+.res1-name {
+	font-size: 35px;
+	color: #fff;
+	font-weight: 500;
+	float: left;
+	width: 500px;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.res1-certifications {
+	float: left;
+	width: 500px;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	span {
+		display: inline;
+	}
+}
+
+.res1-bio {
+	float: left;
+	width: 350px;
+	margin-left: 85px;
+	line-height: 10px;
+	span {
+		font-size: 10px;
+		color: rgba(0,0,0, 0.6);
+	}
+}
+
+.res1-body {
+	color: black;
+}
