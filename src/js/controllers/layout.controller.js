@@ -7,8 +7,12 @@ function LayoutController($state, $cookies) {
 	console.log(vm.loggedIn);
 	
 	vm.logout   = function(){
+
+		$cookies.put('access_token', null);
+        $cookies.put('username', null);
 		$cookies.put('loggedIn', false);
 		$state.go('root.home')
+		
 	}
 }
 
