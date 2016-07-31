@@ -6,7 +6,7 @@ Add your resume and GitHub information to scaffold out a more fully developed po
 In your terminal, use npm install to install JQuery, AngularJS, and Angular-UI-Router.
 
 ##Collaborators
-#Caleb Eggers
-#Rodney Fowlkes Jr.
+###Caleb Eggers
+###Rodney Fowlkes Jr.
 
 Logo credit to Denis Ulyanov.
