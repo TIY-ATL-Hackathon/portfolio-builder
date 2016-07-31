@@ -7,6 +7,5 @@ $(window).scroll(function() {
   	} else{
 		$('.header').removeClass("sticky");
 		$('.logo').removeClass("centered");
-
   	}
 });
