@@ -29,10 +29,7 @@ angular
     .controller('LoginController', Login)  
     .controller('ProfileFormController', profileInfo)
     .controller('ProfileController', ProfileController)
-    .service('requests', requests)
-    
-
-;
+    .service('requests', requests);
 
 
 
